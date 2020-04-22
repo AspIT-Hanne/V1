@@ -1,0 +1,165 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+main
+{
+    height: 100%;
+    margin: 0.5rem;
+}
+
+main section article img
+{
+    width: 100%;
+}
+
+h1, p
+{
+    margin: 2rem 0;
+}
+
+nav
+{
+    height: 50px;
+    background-color: hsl(0, 0%, 50%);
+}
+
+nav .menu-btn, nav>img
+{
+    height: 40px;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+nav input.menu-btn
+{
+    display: block;
+    width: 40px;
+    z-index: 7;
+    opacity: 0;
+    cursor: pointer;
+}
+
+nav>img
+{
+    z-index: 6;
+}
+
+nav ul
+{
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background-color: hsla(0, 0%, 60%, 0.95);
+    position: absolute;
+    top: 0;
+    z-index: 5;
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+nav ul li
+{
+    padding: 0.8rem 0;
+}
+
+nav ul li:hover
+{
+    background-color: hsla(0, 0%, 100%, 0.3);
+}
+
+nav ul li a
+{
+    text-decoration: none;
+    color: darkslategray;
+    padding: 1rem;
+}
+
+nav .menu-btn:checked ~ul
+{
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+}
+
+nav .menu-btn:checked ~ul li
+{
+    text-align: right;
+    width: 100%;
+}
+
+nav .menu-btn:checked ~ .menuicon
+{
+    display: none;
+}
+
+nav .menu-btn ~ .menuicon
+{
+    display: block;
+}
+
+nav .menu-btn:checked ~ .closeicon
+{
+    display: block;
+}
+
+nav .menu-btn ~ .closeicon
+{
+    display: none;
+}
+
+
+
+@media only screen and (min-width: 768px)
+{
+    nav
+    {
+        height: 50px;
+        background-color: hsl(0, 0%, 50%);
+        line-height: 50px;
+    }
+
+    nav img
+    {
+        display: none;
+    }
+
+    nav .menu-btn ~ .menuicon
+    {
+        display: none;
+    }
+
+    nav input.menu-btn
+    {
+        display: none;
+    }
+
+    nav ul
+    {
+        display: flex;
+        justify-content: space-evenly;
+        height: auto;   
+    }
+
+    nav ul li
+    {
+        padding: 0;
+    }
+
+    nav ul li a
+    {
+        color: gainsboro;
+    }
+}
+
