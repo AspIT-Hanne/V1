@@ -1,0 +1,59 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+article
+{
+    margin: 1rem;
+}
+
+body
+{
+    line-height: 1.5;
+}
+
+img
+{
+    width: 500px;
+    float: left;
+    margin-right: 1rem;
+}
+
+h1
+{
+    font-size: 2rem;
+}
+
+h1, h2
+{
+    margin: 1rem 0;
+}
+
+nav
+{
+    background-color: darkslategray;
+    height: 50px;
+    line-height: 50px;
+}
+
+nav ul
+{
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li
+{
+    display: inline-block;
+}
+
+nav ul li a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+    padding: 0 1em;
+    text-transform: uppercase;
+}
