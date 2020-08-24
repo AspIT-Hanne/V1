@@ -4,9 +4,33 @@
     padding: 0;
 }
 
+main
+{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+p
+{
+    margin-bottom: 1rem;
+}
+
+.quote, .headerquote
+{
+    padding-left: 1rem;
+    border-left: 2px solid hsl(0, 0%, 80%);
+    font-style: italic;
+}
+
+.headerquote
+{ 
+    margin-left: calc(500px + 1rem);
+}
+
 article
 {
     margin: 1rem;
+
 }
 
 body
@@ -17,8 +41,8 @@ body
 img
 {
     width: 500px;
-    float: left;
     margin-right: 1rem;
+    float: left;
 }
 
 h1
