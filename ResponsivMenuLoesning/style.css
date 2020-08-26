@@ -94,12 +94,10 @@ nav .menu-btn:checked ~ul
     display: flex;
     transform: translateX(0%);
     flex-direction: column;
-    /* padding-top: 3rem; */
 }
 
 nav .menu-btn:checked ~ul li
 {
-    /* text-align: right; */
     width: 100%;
 }
 
