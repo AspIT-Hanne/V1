@@ -8,13 +8,15 @@ body
 {
     height: 100%;
     font-family: 'Roboto', sans-serif;
-    
+    overflow-x: hidden;
 }
 
 main
 {
     height: 100%;
     margin: 0.5rem;
+    position: relative;
+    z-index: -1;
 }
 
 main section article img
