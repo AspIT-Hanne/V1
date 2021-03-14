@@ -1,0 +1,138 @@
+/* Root reset */
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for the whole page */
+body
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+/* Navigation styling mobile */
+nav ul
+{
+    display: none;
+}
+
+nav .menuicon
+{
+    display: block;
+    height: 2rem;
+    position: fixed;
+    top: 0.3rem;
+    right: 0.3rem;
+}
+
+/* Header styling mobile */
+header
+{
+    background-color: #CAAA95;
+    height: 4rem;
+    text-align: center;
+    line-height: 4rem;
+    text-shadow: -2px -2px lightgray;
+}
+
+header img
+{
+    display: none;
+}
+
+/* Main area styling mobile */
+article img
+{
+    width: 100%;
+    height: auto;
+}
+
+h1
+{
+    font-size: 1.8rem;
+}
+
+h2, p
+{
+    margin: 1.5rem 0.7rem;
+}
+
+@media only screen and (min-width: 500px)
+{
+    /* Navigation styling - desktop */
+    nav
+    {
+        display: block;
+        height: 50px;
+        line-height: 50px;
+        background-color: #5B574C;
+    }
+
+    nav ul
+    {
+        display: block;
+        list-style-type: none;
+        text-align: center;
+    }
+
+    nav ul li
+    {
+        display: inline-block;
+        padding: 0 1rem;
+    }
+
+    nav ul li:hover
+    {
+        background-color: hsla(0, 0%, 100%, 0.1);
+    }
+
+    nav ul li a
+    {
+        color: #DEDEDC;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+
+    nav .menuicon
+    {
+        display: none;
+    }
+
+    /* Header styling desktop */
+    header
+    {
+        height: auto;
+        background-color: inherit;
+        text-shadow: none;
+    }
+
+    header img
+    {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    /* Main area styling desktop */
+    main
+    {
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    article img
+    {
+        display: none;
+    }
+
+    /* Only the images that are to be shown on desktop have the class "desktopimg" */
+    article .desktopimg
+    {
+        display: block;
+    }
+}
+

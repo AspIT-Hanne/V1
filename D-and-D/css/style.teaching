@@ -1,0 +1,77 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+header
+{
+    background-color: hsl(24, 50%, 70%);
+}
+
+header img
+{
+    display: none;
+}
+
+.menuicon
+{
+    width: 30px;
+    position: fixed;
+    top: 5px;
+    right: 5px;
+}
+
+nav ul
+{
+    display: none;
+}
+
+img
+{
+    max-width: 100%;
+}
+
+p
+{
+    margin: 0.8rem;
+}
+
+@media only screen and (min-width: 500px)
+{
+    .menuicon
+    {
+        display: none;
+    }
+
+    header img
+    {
+        display: block;
+    }
+
+    nav ul
+    {
+        display: block;
+    }
+
+    .desktop-noshow
+    {
+        display: none;
+    }
+
+    main, header h1
+    {
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    header
+    {
+        background-color: white;
+    }
+
+    header h1
+    {
+        padding-left: 0.8rem;
+    }
+}
