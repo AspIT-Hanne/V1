@@ -1,0 +1,278 @@
+/* General styling */
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    /* display: flex;
+    flex-direction: column;
+    height: 100vh; */
+    color: darkslategray;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+h1, h2, h3
+{
+    color: darkgreen;
+    font-family: 'Patrick Hand', cursive;
+    margin: 1rem 0;
+}
+
+h1
+{
+    font-size: 2rem;
+}
+
+h2
+{
+    font-size: 1.7rem;
+}
+
+h3
+{
+    font-size: 1.4rem;
+    font-style: italic;
+}
+
+/* Navigation styling */
+
+nav, footer
+{
+    background-color: darkgreen;
+    text-align: center;
+    height: 2rem;
+    width: 100%;
+    
+}
+
+nav
+{
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    top: 100px;
+}
+
+footer
+{
+    position: fixed;
+    bottom: 0px;
+}
+
+nav a, footer p
+{
+    color: mintcream;
+    text-decoration: none;
+    line-height: 2rem;
+    margin: 0;
+    padding: 0 0.8rem;
+}
+
+
+li a
+{
+    color: darkgreen;
+    text-decoration: none;
+}
+
+header
+{
+    height: 100px;
+    background-image: url("../img/headerimg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-shrink: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+header a
+{
+    /* width: 100%; */
+    display: block;
+    height: 100%;
+}
+
+header h1
+{
+    color: rgb(9, 214, 26);
+    text-shadow: whitesmoke -2px -2px 5px;
+    margin: 0;
+    font-size: 4.5rem;
+    background-color: hsla(0, 0%, 100%, 0.2);
+}
+
+a
+{
+    text-decoration: none;
+    color: darkgreen;
+}
+
+a:visited
+{
+    color:slategray;
+}
+
+main
+{
+    margin: 150px auto 4rem;
+    width: 1000px;
+}
+
+p
+{
+    margin: 0.7rem 0;
+}
+
+nav a:visited
+{
+    color: mintcream;
+}
+
+nav a:hover
+{
+    background-color: hsla(0, 0%, 100%, 0.3);
+}
+
+nav a:active
+{
+    color:rgb(9, 214, 26);
+}
+
+.newproductsheading
+{
+    background-color: rgba(0, 100, 0, 0.5);
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    color: mintcream;
+    border-radius: 5px;
+    text-shadow: darkgreen -2px -2px 5px;
+    margin: 3rem 0;
+}
+
+.newproducts
+{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+
+}
+
+.newproducts li
+{
+    padding: 0.5rem;
+}
+
+.newproducts li a
+{
+    color: darkgreen;
+}
+
+.newproducts li:hover
+{
+    opacity: 0.7;
+    background-color:hsla(90, 50%, 50%, 0.1);
+}
+
+.background
+{
+    background-color: thistle;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.background img
+{
+    width: 90%;
+    height: auto;
+    text-align: center;
+}
+
+.plantdetails
+{
+    display: flex;
+}
+
+.plantdetails article
+{
+    margin-left: 2rem;
+}
+
+.plantdetails article p
+{
+    margin-bottom: 1.5rem;
+}
+
+/* Styling af kontakt formular */
+
+.newplantentry
+{
+    display: none;
+}
+
+.chk_newplant:checked ~.newplantentry
+{
+    display: block;
+}
+
+.contactform p
+{
+    display: flex;
+}
+
+label
+{
+    width: 25rem;
+}
+
+input, textarea
+{
+    background-color: hsla(0, 0%, 0%, 0.05);
+    margin-right: 0.7rem;
+}
+
+input:focus, textarea:focus
+{
+    background-color: hsla(0, 0%, 0%, 0.0);
+}
+
+input[type=text], input[type=email], textarea
+{
+    width: 20rem;
+}
+
+input[type=number]
+{
+    width: 4rem;
+}
+
+textarea
+{
+    height: 7rem;
+}
+
+select
+{
+    width: 7rem;
+}
+
+.sel_months
+{
+    scrollbar-width: none;
+    overflow: hidden;
+}
+
+/* TEST AREA */
+
