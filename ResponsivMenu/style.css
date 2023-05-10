@@ -67,7 +67,7 @@ nav .menu-btn
     display: block;
     width: 40px;
     z-index: 7;
-    opacity: 0;
+    /* opacity: 0; */
     cursor: pointer;
 }
 

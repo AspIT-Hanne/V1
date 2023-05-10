@@ -1,0 +1,14 @@
+nav {
+  height: 100px;
+  background-color: pink;
+}
+nav img {
+  display: none;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+}
+nav a:hover {
+  background-color: green;
+}/*# sourceMappingURL=nystyle.css.map */

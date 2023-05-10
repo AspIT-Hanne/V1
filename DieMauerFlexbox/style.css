@@ -1,0 +1,374 @@
+/* Reset of all margins and paddings */
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+/* Main styling */
+
+body
+{
+    width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.midsection
+{
+    display: flex;
+    height: 100%;
+}
+
+/* Header styling */
+
+header
+{
+    background-color: #CCCCCC;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header img
+{
+    height: 100px;
+}
+
+/* General menu styling - applies to both menus (and footer for some properties) */
+
+nav ul
+{
+    list-style-type: none;
+    line-height: 40px;
+}
+
+nav ul a
+{
+    padding: 0 0.8rem;
+}
+
+nav ul a, footer a
+{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li:hover
+{
+    background-color: #CCCCCC;
+}
+
+nav ul li:hover a
+{
+    color: rgba(50, 54, 84, 0.8);
+}
+
+/* Top navigation styling (and some also apply for footer) */
+
+nav.top
+{
+    display: flex;
+    align-items: center;
+}
+
+nav.top img, nav.side img, nav.top h5, nav.side h5
+{
+    display: none;
+    margin: 0 0.5rem;
+}
+
+nav.top, footer
+{
+    height: 40px;
+    background-color: hsl(0, 0%, 34%);
+    color: white;
+}
+
+nav.top ul
+{
+    display: flex;
+}
+
+nav.top ul li a
+{
+    border-right: 1px solid white;
+}
+
+nav.top ul li:last-of-type a
+{
+    border-right: none;
+}
+
+nav.top ul li a::before
+{
+    content: "\25B6";
+    font-size:small;
+    padding-right: 0.5rem;
+    color: hsla(233, 25%, 26%, 0.8);
+}
+
+/* Side navigation styling */
+
+nav.side, nav.side ul
+{
+    display: flex;
+    flex-direction: column;
+}
+
+nav.side
+{
+    background-color: #CCCCCC;
+}
+
+nav.side ul
+{
+    background-color: hsla(233, 25%, 26%, 0.8);
+}
+
+nav.side ul li a
+{
+    display: block;
+    border-bottom: 1px solid white;
+    margin: 0 1rem;
+}
+
+nav.side ul li:last-of-type a
+{
+    border-bottom: none;
+}
+
+/* Footer styling */
+
+footer
+{
+    position: absolute;
+    bottom: 0;
+    width: 1200px;
+    text-align: center;
+    line-height: 40px;
+}
+
+/* Styling of content area */
+
+main
+{
+    /* 18% padding on left side to account for the sidebar nav that is 15% wide */
+    padding: 1rem; 
+}
+
+/* Section size and positioning */
+
+section
+{
+    
+    font-size: small;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Article styling */
+
+article
+{
+    margin-bottom: 5em;
+    margin-left: 3rem;
+    width: 45%;
+}
+
+article img
+{
+    float:left;
+    margin-right: 1em;
+}
+
+article p:first-of-type::first-line
+{
+    color: rgba(50, 54, 84, 0.9);
+    line-height: 1rem;
+    padding-bottom: 2px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+h2
+{
+    color: hsl(0, 0%, 34%);
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid hsl(0, 0%, 34%);
+}
+
+@media only screen and (max-width: 500px)
+{
+    body, footer
+    {
+        width: 100%;
+        height: 100%;
+    }
+
+    header
+    {
+        flex-direction: column-reverse;
+    }
+
+    header, header img
+    {
+        height: auto;
+        max-width: 100%;
+    }
+
+    .midsection
+    {
+        flex-direction: column;
+    }
+
+    nav.top img, nav.side img
+    {
+        display: block;
+        height: 100%;
+        cursor: pointer;
+    }
+
+    nav.top ul, nav.side ul
+    {
+        display: none;
+    }
+
+    nav.top h5
+    {
+        padding-left: 0.5rem;
+    }
+
+    nav.side
+    {
+        background-color: rgba(50, 54, 84, 0.8);
+        color: white;
+        height: 40px;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    nav.side h5, nav.top h5
+    {
+        display: block;
+        font-size: 1.5rem;
+        padding-right: 0.5rem;
+    }
+
+    article
+    {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 2rem;
+    }
+
+    footer
+    {
+        position: relative;
+    }
+}
+
+@media only screen and (max-width: 900px)
+{
+    body, footer
+    {
+        width: 100%;
+        height: 100%;
+    }
+
+    header img
+    {
+        max-width: 50%;
+        height: auto;
+    }
+    nav.top img, nav.side img
+    {
+        display: block;
+        height: 100%;
+        cursor: pointer;
+        
+    }
+
+    nav.top ul, nav.side ul
+    {
+        display: none;
+    }
+
+    nav.top h5
+    {
+        padding-left: 0.5rem;
+    }
+
+    nav.side
+    {
+        background-color: rgba(50, 54, 84, 0.8);
+        color: white;
+        height: 40px;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    nav.side h5, nav.top h5
+    {
+        display: block;
+        font-size: 1.5rem;
+        padding-right: 0.5rem;
+    }
+
+    footer
+    {
+        position: relative;
+    }
+}
+
+@media only screen and (max-width: 1100px)
+{
+    body, footer
+    {
+        max-width: 100%;
+    }
+
+    nav.side, nav.side ul
+    {
+        flex-direction: row;
+    }
+
+    nav.side
+    {
+        background-color: rgba(50, 54, 84, 0.8);
+    }
+
+    nav.side ul
+    {
+        background-color: rgba(0,0,0,0);
+    }
+
+    nav.side ul li a
+    {
+        /* padding: 0 0.7rem; */
+        margin: 0;
+        border: none;
+    }
+
+    .midsection
+    {
+        flex-direction: column;
+    }
+
+    article
+    {
+        margin: 1rem;
+    }
+
+    footer
+    {
+        position: relative;
+    }
+}

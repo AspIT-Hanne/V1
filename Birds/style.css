@@ -12,12 +12,12 @@ body
     line-height: 1.8;
 }
 
-body, .birdindex a
+body, .birdindex a, .birdindex2 a
 {
     color: darkslategray;
 }
 
-.birdindex a
+.birdindex a, .birdindex2 a
 {
     text-decoration: none;
 }
@@ -129,11 +129,10 @@ header
 
 h1
 {
-    
     color: rgb(128, 72, 25);
     text-transform: uppercase;
     text-shadow: -2px -2px 2px silver;
-    font-size: 50px;
+    font-size: 4rem;
 }
 
 h1, h2
@@ -153,7 +152,7 @@ ul
 
 .birdimg
 {
-    float: left;
+    /* float: left; */
     margin-right: 20px;
 }
 
@@ -165,26 +164,56 @@ main a img:hover
 
 .birdfacts
 {
-    height: 212px;
-    background-color: rgba(255, 255, 255, 0.4);
-    padding: 10px;
+    display: flex;
+    background-color: hsla(0, 0%, 100%, 0.4);
+    padding: 0.7rem;
 }
 
 .birdindex
 {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-/* .birdindex div
+.birdindex2
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.birdindex2 div
+{
+    margin-right: 3.1rem;
+}
+
+
+.birdindex div, .birdindex2 div
 {
     display: flex;
     justify-content: center;
     text-align: center;
-} */
+}
 
 @media only screen and (max-width: 1000px)
 {
+    .birdindex, .birdindex2
+    {
+        flex-wrap: no-wrap;
+        justify-content: center;
+    }
+
+    html
+    {
+        overflow-x: hidden;
+    }
+
+    .birdindex2 div
+    {
+        margin-right: 0;
+    }
+
     nav input.menu-btn
     {
         display: block;
@@ -311,16 +340,16 @@ main a img:hover
 
     h1
     {
-        font-size: 30px; 
+        font-size: 3rem; 
     }
 
-    .birdindex
+    .birdimg
     {
-        grid-template-columns: 1fr;
+        margin-right: 0;
     }
 
     .birdfacts
     {
-        height: auto;
+        flex-direction: column;
     }
 }

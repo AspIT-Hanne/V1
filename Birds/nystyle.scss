@@ -1,0 +1,24 @@
+nav
+{
+    height: 100px;
+    background-color: pink;
+
+    img
+    {
+        display: none;
+    }
+
+    a
+    {
+        text-decoration: none;
+        color: black;
+
+        &:hover
+        {
+            background-color: green;
+        }
+    }
+
+    
+}
+

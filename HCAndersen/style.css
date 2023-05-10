@@ -15,18 +15,6 @@ p
     margin-bottom: 1rem;
 }
 
-.quote, .headerquote
-{
-    padding-left: 1rem;
-    border-left: 2px solid hsl(0, 0%, 80%);
-    font-style: italic;
-}
-
-.headerquote
-{ 
-    margin-left: calc(500px + 1rem);
-}
-
 article
 {
     margin: 1rem;
@@ -60,24 +48,4 @@ nav
     background-color: darkslategray;
     height: 50px;
     line-height: 50px;
-}
-
-nav ul
-{
-    list-style-type: none;
-    text-align: center;
-}
-
-nav ul li
-{
-    display: inline-block;
-}
-
-nav ul li a
-{
-    text-decoration: none;
-    color: white;
-    font-size: 2em;
-    padding: 0 1em;
-    text-transform: uppercase;
 }

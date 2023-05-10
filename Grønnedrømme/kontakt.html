@@ -14,24 +14,53 @@
 </head>
 <body>
     
-        <header><a href="index.html"></a>
-        </header>
+    <header><a href="index.html"></a>
+    </header>
 
     <nav>
-        <a href="index.html">home</a>
-        <a href="plants/bonne.html">Bønne</a>
-        <a href="plants/aert.html">Ært</a>
-        <a href="plants/basilikum.html">Basilikum</a>
-        <a href="plants/bonne-borlottorosso.html">Bønne - Borlotto Rosso</a>
-        <a href="plants/bonne-yinyang.html">Bønne - Yin Yang</a>
-        <a href="plants/squash-spaghetti.html">Spaghetti Squash</a>
-        <a href="kontakt.html">Kontakt os</a>
+        <ul>
+            <li>
+                <a href="index.html">home</a>
+            </li>
+            <li>
+                <a href="#">Grøntsager</a>
+                <ul>
+                    <li>
+                        <a href="plants/bonne.html">Bønne</a>
+                    </li>
+                    <li>
+                        <a href="plants/bonne-borlottorosso.html">Bønne - Borlotto Rosso</a>
+                    </li>
+                    <li>
+                        <a href="plants/bonne-yinyang.html">Bønne - Yin Yang</a>
+                    </li>
+                    <li>
+                        <a href="plants/squash-spaghetti.html">Spaghetti Squash</a>
+                    </li>
+                    <li>
+                        <a href="plants/aert.html">Ært</a>
+                    </li>
+
+                </ul>
+            </li>
+            <li>
+                <a href="#">Krydderurter</a>
+                <ul>
+                    <li>
+                        <a href="plants/basilikum.html">Basilikum</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="kontakt.html">Kontakt os</a>
+            </li>
+        </ul>
     </nav>
     <main>
         <h1>Kontakt os</h1>
         <section>
             <article>
-                <form method="GET" action="kontaktlanding.html" class="contactform">
+                <form method="POST" action="kontaktlanding.html" class="contactform">
                     <p>
                         <label for="navn">Navn: </label>
                         <input type="text" name="navn" required>
@@ -134,7 +163,7 @@
                         </p>
                     </div>
                     <p>
-                        <button type="submit" value="indsend">Indsend</button>
+                        <input type="submit" value="indsend" name="submit">
                     </p>
                 </form>
             </article>
@@ -142,9 +171,9 @@
 
     </main>
     
-    <!-- <footer>
+    <footer>
         <p>&copy; Grønne Drømme 2021</p>
-    </footer> -->
+    </footer>
 
 </body>
 </html>
