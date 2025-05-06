@@ -15,11 +15,16 @@ body
 header>a 
 {
     margin: 0;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
 }
 
 header
 {
     line-height: 0rem;
+    background: url(../img/header-banner-mobile.png) left top/cover no-repeat;
+    height: 100px;
 }
 
 h1, h2
@@ -56,7 +61,7 @@ footer
 
 nav
 {
-    display: none;
+    /* display: none; */
     position: sticky;
     top: 0;
     left: 0;
@@ -70,16 +75,20 @@ nav ul
     justify-content: center;
 }
 
-nav>ul>li
+nav>ul li
 {
-    width: 15%;
+    width: 100px;
 }
 
 nav ul li
 {
     display: block;
     line-height: 3rem;
+}
 
+nav ul>li:nth-child(4)
+{
+    display: none;
 }
 
 nav ul li:hover
@@ -87,9 +96,9 @@ nav ul li:hover
     background-color: hsla(0, 0%, 100%, 0.3);
 }
 
-nav ul>li a, nav ul ul li a
+nav ul li a
 {
-    padding-left: 2rem;
+    padding: 0 0.5rem;
 }
 
 nav>ul>li>a, footer p
@@ -108,6 +117,7 @@ nav ul ul
 {
     background-color: hsla(0, 0%, 70%, 0.9);
     flex-direction: column;
+    position: absolute;
     display: none;
 }
 
@@ -119,6 +129,7 @@ nav ul li:hover ul
 nav ul ul li a
 {
     color: darkslategray;
+    font-size: 1rem;
 }
 
 p, a, h4, li
@@ -192,11 +203,40 @@ article > ul
     border-bottom: solid 2px darkslategray;
 }
 
+.icons img:hover
+{
+    opacity: 0.7;
+}
+
 @media only screen and (min-width: 768px)
 {
+    header
+    {
+        background: url(../img/header-banner.jpg);
+    }
     nav
     {
         display: block;
+    }
+
+    nav>ul li
+    {
+        width: 300px;
+    }
+
+    /* nav ul li li
+    {
+        width: 100%;
+    } */
+
+    nav ul>li a, nav ul ul li a
+    {
+        padding-left: 2rem;
+    }
+
+    nav ul ul li a
+    {
+        font-size: inherit;
     }
 
     h1 + img
