@@ -90,22 +90,24 @@ nav a
 
 nav ul, footer
 {
-    background-color: darkgreen;
-    width: 100%;
+    background-color: hsl(120, 100%, 20%);
+    /* width: 100%; */
     
 }
 
 nav ul
 {
     list-style-type: none;
-    display: flex;
-    justify-content: space-evenly;
+    text-align: center;
+    /* display: flex; */
+    /* justify-content: space-evenly; */
     top: 100px;
 }
 
-nav ul li
+nav ul>li
 {
     position: relative;
+    display: inline-block;
 }
 
 nav ul li a, footer p
@@ -115,6 +117,25 @@ nav ul li a, footer p
     line-height: 2rem;
     margin: 0;
     padding: 0 0.8rem;
+}
+
+nav .bookmarks
+{
+    font-size: 0.9rem;
+    background-color: hsl(120, 40%, 60%);
+    justify-content: start;
+    padding-left: 3rem;
+}
+
+nav .bookmarks li
+{
+    width: auto;
+}
+
+nav .bookmarks a
+{
+    text-transform: none;
+    line-height: 1.3rem;
 }
 
 /* Footer styling */
@@ -144,6 +165,7 @@ header
     background-repeat: no-repeat;
     background-size: cover;
     flex-shrink: 0;
+    text-align: center;
     top: 0;
     width: 100%;
 }
@@ -156,7 +178,8 @@ header a
 
 header h1
 {
-    color: rgb(9, 214, 26);
+    /* position: absolute; */
+    color: hsl(125, 50%, 25%);
     text-shadow: whitesmoke -2px -2px 5px;
     margin: 0;
     font-size: 4.5rem;
@@ -218,7 +241,7 @@ header h1
 .newproducts li:hover
 {
     opacity: 0.7;
-    background-color:hsla(90, 50%, 50%, 0.1);
+    background-color:hsla(90, 50%, 50%, 0.3);
 }
 
 .newproducts img
@@ -416,6 +439,8 @@ select
     main
     {
         width: 1000px;
+        margin: auto;
+        margin-top: 170px;
     }
     
     .plantdetails img
@@ -442,26 +467,40 @@ select
         width: 100%;
     }
 
-    nav>ul>li
+    header a
+    {
+        position: relative;
+        z-index: 5;
+    }
+
+    nav>ul li
     {
         width: 300px;
     }
 
     nav ul ul
     {
-        flex-direction: column;
+        /* flex-direction: column; */
         position: absolute;
         z-index: 1;
         top: 2rem;
         background-color:hsla(0, 0%, 0%, 0.9);
-        max-height: 0;
+        /* max-height: 0;
         transition: max-height 0.4s ease-out;
-        overflow: hidden;
+        overflow: hidden; */
+        visibility: hidden;
     }
+
+    nav ul ul li
+    {
+        display: block;
+    }
+
 
     nav ul li:hover ul
     {
-        max-height: 500px;
+        /* max-height: 500px; */
+        visibility: visible;
     }
 
     nav ul ul li:hover
@@ -483,11 +522,6 @@ select
     {
         color: darkgreen;
         text-decoration: none;
-    }
-
-    main
-    {
-        margin-top: 140px;
     }
 }
 
